@@ -1,4 +1,4 @@
-# Alpha Toe (any game, any framework!)
+# Alpha Toe (one game, one framework)
 
 ### We took this dudes code and we're gonna make it play tic-tac-toe to prove Gary is wrong about us. 
 
@@ -15,3 +15,4 @@ We trained a Tensorflow model for 3x3 Tic Toe. You can play a game against it. P
 
 ### Ya Boiz
 
+The new edited code was written by Shane Caldwell and Noah Johnson. 

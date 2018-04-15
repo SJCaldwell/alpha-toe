@@ -14,5 +14,4 @@ Choose your framework and game in ```main.py```.
 We trained a Tensorflow model for 3x3 Tic Toe. You can play a game against it. Probably
 
 ### Ya Boiz
-
 The new edited code was written by Shane Caldwell and Noah Johnson. 

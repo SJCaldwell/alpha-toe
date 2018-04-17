@@ -4,7 +4,7 @@ from tictactoe.tensorflow.NNet import NNetWrapper as nn
 from utils import *
 
 args = dotdict({
-    'numIters': 1000,
+    'numIters': 80,
     'numEps': 100,
     'tempThreshold': 15,
     'updateThreshold': 0.6,
@@ -21,7 +21,7 @@ args = dotdict({
 })
 
 if __name__=="__main__":
-    g = Game(6)
+    g = Game(3)
     nnet = nn(g)
 
     if args.load_model:

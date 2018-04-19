@@ -53,7 +53,7 @@ class GUI:
     for x in range(BOARD_SIZE):
         for y in range(BOARD_SIZE):
           handler = lambda x=x,y=y: self.move(x,y)
-          button = Button(self.app, command=handler, width=300, height=300)
+          button = Button(self.app, command=handler, width=200, height=200)
           button.grid(row=y, column=x)
           self.buttons[x,y] = button
     handler = lambda: self.reset()

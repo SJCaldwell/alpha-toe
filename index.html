@@ -75,6 +75,16 @@
                     </textarea>
                 </section>
                 <section data-markdown>
+                    <textarea data-template>
+                    ### Architecture
+                    - 3x3 input matrix represents board, elements -1, 0, 1 
+                    - 3 convolutional layers with 'same' padding
+                    - 1 convolutional layer with 'valid' padding
+                    - 3 dense layers with dropout
+                    - Final output is a size 9 vector of possible actions
+                    </textarea>
+                </section>
+                <section data-markdown>
                         <textarea data-template>
 
                     ### We trained it for a couple hours
@@ -161,7 +171,7 @@
             <textarea data-template>
              ### Conclusion
              - We have mastered Tic-Tac-Toe
-             - Once we master mini Shogi we will win Gold in the 2018 ICGA
+             - Once we master mini Shogi we will win Gold in the ICGA (July 2018)
         </textarea>
     </section>
 

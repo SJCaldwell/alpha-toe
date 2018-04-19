@@ -146,7 +146,7 @@ class GUI:
     self.board = g.getInitBoard()
     self.curPlayer = 1
     self.Lagann = ImageTk.PhotoImage(Image.open("mecha.jpg"))
-    self.Killmanovich = ImageTk.PhotoImage(Image.open("killmanovich.jpg"))
+    self.Killmanovich = ImageTk.PhotoImage(Image.open("killmanovich.png"))
     self.blankSquare = ImageTk.PhotoImage(Image.open("white square.png"))
     self.font = Font(family="Helvetica", size=32)
     self.buttons = {}
@@ -200,12 +200,13 @@ class GUI:
             #self.buttons[x,y]['state'] = 'disabled'
     winning = g.getGameEnded(self.board, self.curPlayer)  #self.board.won()
     if winning:
-      #for x,y in winning:
-      #  self.buttons[x,y]['disabledforeground'] = 'red'
-      for x,y in self.buttons:
-        self.buttons[x,y]['command'] = 0  # this disables the callback
-        self.buttons[x,y]['relief'] = 'sunken'  # makes the button fixed
-        #self.buttons[x,y]['state'] = 'disabled'
+      for x in range(BOARD_SIZE):
+        for y in range(BOARD_SIZE):
+          #self.buttons[x,y]['disabledforeground'] = 'red'
+          self.buttons[x,y]['fg'] = 'red'
+          self.buttons[x,y]['command'] = 0  # this disables the callback
+          self.buttons[x,y]['relief'] = 'sunken'  # makes the button fixed
+          #self.buttons[x,y]['state'] = 'disabled'
     for x in range(BOARD_SIZE):
         for y in range(BOARD_SIZE):
           self.buttons[x,y].update()

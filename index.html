@@ -138,10 +138,11 @@
     <section data-markdown>
             <textarea data-template>
              ### Feature Planes
-
-             - How do you encode different pieces without implying values?
-             - The answer is to use different channels of the board and then use 1s to indicate a piece on that channel 
-             - This can encode all 14 types of shogi pieces (with promotion)
+             - How do you encode the board state as input to the neural net?
+             - We could map different pieces to integers, but that would imply an ordering.
+             - The answer is to use different channels of the board, one plane for each piece
+             - Each feature plane uses binary values to indicate a piece position on the board
+             - This can encode all 8 types of shogi pieces (6 normal types, 2 unique promoted types)
         </textarea>
     </section>
     <section data-markdown>
